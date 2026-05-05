@@ -11,6 +11,6 @@ Full REST API reference with endpoints for blocks, transactions, addresses, UTXO
 - [Postman Collection](https://docs.whatsonchain.com) — available for testing
 
 ## Support
-- [https://github.com/bsv-blockchain/whatsonchain/issues] - Raise an issue or feature request
-- [https://github.com/bsv-blockchain/whatsonchain/issues] - Q&A Community Forum
+- [Issues](https://github.com/bsv-blockchain/whatsonchain/issues) - Raise an issue or feature request
+- [Discussions](https://github.com/bsv-blockchain/whatsonchain/issues) - Community Discussions - Q&A
 - [WoC Devs Telegram](https://t.me/WoCdevs) — Key updates from the WOC team (Broadcast only)
