@@ -1,0 +1,81 @@
+name: Bug report
+description: Report a problem with WhatsOnChain.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem so we can investigate it. Please check [existing issues](https://github.com/bsv-blockchain/whatsonchain/issues) first.
+        For questions, ideas and feature requests, use [Discussions](https://github.com/bsv-blockchain/whatsonchain/discussions).
+
+  - type: dropdown
+    id: service
+    attributes:
+      label: Affected service
+      options:
+        - Explorer website
+        - REST API
+        - WebSockets
+        - Plugins
+        - Dashboard
+        - Documentation
+        - Other / unsure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      options:
+        - Mainnet
+        - Testnet
+        - Both
+        - Not applicable / unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: What happened?
+      description: Describe the problem and include any error messages. If it happens intermittently, include when it occurred and your time zone.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Explain how to trigger the problem. If you cannot reproduce it reliably, describe what you were doing when it happened.
+      placeholder: |
+        1. Open this page or call this endpoint...
+        2. Take this action...
+        3. Observe the problem...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser or client details
+      description: If relevant, include your browser and operating system versions, API client or library version, or plugin name.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Related transactions, addresses or endpoints
+      description: Add relevant transaction IDs, block hashes, addresses, page URLs or API requests and responses. Remove API keys and authentication tokens before sharing.
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or additional details
+      description: Paste or attach screenshots, logs or other information that helps explain the problem.

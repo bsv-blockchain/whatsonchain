@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions, ideas and feature requests
+    url: https://github.com/bsv-blockchain/whatsonchain/discussions
+    about: Ask the community for help, suggest features or share feedback in GitHub Discussions.
