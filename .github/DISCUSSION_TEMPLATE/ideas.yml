@@ -1,0 +1,32 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a feature request or an idea for improving WhatsOnChain. Check [existing ideas](https://github.com/bsv-blockchain/whatsonchain/discussions/categories/ideas) first so you can add to an existing conversation where relevant.
+        You do not need a fully developed proposal. Once there is agreed work to track, the team can create a linked issue.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem or need would this address?
+      description: Describe what you are trying to do, what is missing, and who would benefit.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested solution
+      description: If you have an approach in mind, describe how it could help. A technical design is not required.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any workarounds or other approaches you have tried or considered.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or additional context
+      description: Add examples, screenshots, mockups or links that help explain your idea.
