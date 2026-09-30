@@ -1,0 +1,81 @@
+name: Tag request
+description: Ask for your app or protocol to be tagged on the WhatsOnChain Tags leaderboard.
+title: "Tag request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Give us the details below so we can tag your app's transactions and add it to the [Tags leaderboard](https://whatsonchain.com/tag-stats). The [Tag My App](https://whatsonchain.com/tag-my-app) page explains how tagging works.
+        Anything you post here is public. Do not include private keys, API keys or other secrets.
+
+  - type: input
+    id: name
+    attributes:
+      label: App or protocol name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Pick the category that best describes your app or protocol. There is no wrong answer.
+      options:
+        - Protocol
+        - iGaming
+        - Advertisement
+        - Social Media
+        - Utility
+        - Enterprise
+        - Finance
+        - Wallet&Market
+        - Others
+    validations:
+      required: true
+
+  - type: textarea
+    id: pattern
+    attributes:
+      label: OP_RETURN pattern
+      description: Your transactions need an OP_RETURN output containing a recognisable plain-text pattern. Describe that pattern precisely enough for us to identify your transactions, including where it appears in the output.
+    validations:
+      required: true
+
+  - type: textarea
+    id: txids
+    attributes:
+      label: Example transaction IDs
+      description: A few representative transaction IDs, one per line.
+      render: text
+    validations:
+      required: true
+
+  - type: input
+    id: colour
+    attributes:
+      label: Brand colour
+      description: Your main brand colour, ideally as a hex code.
+      placeholder: "#1a73e8"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logo
+    attributes:
+      label: Logo
+      description: Attach your logo file (drag it into this field). Minimum size 256 pixels. Please provide an SVG version if you can.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: A short description that explains your app or protocol to users.
+
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: The link you would like interested users to follow.
+      placeholder: https://
